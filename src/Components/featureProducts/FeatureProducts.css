@@ -1,0 +1,79 @@
+.feature-parent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.fproduct{
+    width: 22%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+
+}
+.fproduct > *{
+    margin-bottom: 20px;
+
+}
+.fproduct img{
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.fproduct img:hover{
+    transform: scale(1.2);
+}
+.fproduct h2{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.fproduct-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+}
+.fproduct-price h3{
+    font-size: 20px;
+}
+.fproduct-price h4{
+    font-size: 20px;
+    color: gray;
+    text-decoration: line-through;
+}
+.fproduct-icons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: gold;
+
+}
+.fproduct-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.fproduct-btn{
+    background-color: var(--main-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+.fproduct-btn:hover{
+    background-color:#fafa29 ;
+}
+@media screen and (max-width : 800px) {
+     .feature-parent{
+        flex-direction: column;
+     }
+     .fproduct{
+        width: 90%;
+        margin-left: 10px;
+     }
+
+}

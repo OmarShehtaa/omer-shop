@@ -1,0 +1,47 @@
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.categories-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.category{
+    width: 22%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+
+}
+.category img{
+    width: 70px;
+}
+.category{
+    text-align: center;
+}
+.category h2{
+    font-size: 18px;
+
+}
+.category p{
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+
+}
+@media screen and (max-width : 800px) {
+    .categories-content{
+        flex-direction: column;
+    }
+    .category{
+        width: 90%;
+        margin-left:10px ;
+    }
+    
+}

@@ -1,0 +1,30 @@
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.service{
+    background-color: #fff;
+    width: 24%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+.service-icon{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.service span{
+    font-size: 20px;
+}
+@media screen and (max-width : 800px) {
+    .services{
+        flex-direction: column;
+    }
+    .service{
+        width: 90%;
+    }
+}

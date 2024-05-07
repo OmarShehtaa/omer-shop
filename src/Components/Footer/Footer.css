@@ -1,0 +1,131 @@
+footer {
+    background-color: #3d464d;
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+}
+
+.top-footer {
+    /* width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-footer img {
+    width: 200px;
+}
+
+hr {
+    margin: 20px 0px;
+    opacity: 0.7;
+}
+
+.top-footer div {
+    color: #fff;
+    text-align: center;
+}
+
+.top-footer div h3 {
+    color: gray;
+    margin-top: 5px;
+
+}
+
+.Subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.Subscribe input {
+    padding: 10px;
+    outline: none;
+}
+
+.Subscribe button {
+    padding: 9px;
+    background-color: #0167f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.middle-footer {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.middle-footer div {
+    width: 30%;
+}
+
+.middle-footer div p {
+    line-height: 1.5;
+}
+
+.middle-footer div h2 {
+    margin-bottom: 20px;
+}
+
+.middle-footer div ul {
+    list-style: none;
+}
+
+.middle-footer div ul li {
+    margin-top: 10px;
+}
+
+.middle-footer div ul li a {
+    color: #ffff;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.middle-footer div ul li a:hover {
+    color: blue;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+@media screen and (max-width : 800px) {
+        .top-footer {
+                flex-direction: column;
+                gap: 20px;
+            }
+        
+            .top-footer img {
+                width: 200px;
+            }
+        
+            .middle-footer {
+                flex-direction: column;
+                gap: 20px;
+            }
+        
+            .middle-footer div {
+                width: 90%;
+            }
+        
+        
+            .bottom-footer {
+                flex-direction: column;
+                gap: 20px;
+        
+            }
+        
+}

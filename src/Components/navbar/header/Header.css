@@ -1,0 +1,99 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    /* height: 50vh; */
+
+}
+.header-left{
+    width: 60%;
+
+}
+.header-right{
+    width: 35%;
+}
+.header-left-man{
+    background-image:linear-gradient(rgba(20,20,20,0.7),rgba(20,20,20,0.7)),url(../../../img/carousel-1.jpg);
+    background-size: cover;
+    height: 400px; ;
+}
+.header-left-woman{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(../../../img/carousel-2.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.header-left-kids{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(../../../img/carousel-3.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.h div{
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    color: #fff;
+
+}
+.h div> *{
+    margin-bottom: 20px;
+}
+.h div h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.h div p{
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.header button{
+    padding: 10px;
+    /* width: 150px; */
+    border: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.header button:hover{
+    background-color: var(--main-color);
+}
+
+.header-right-up{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4)), url(../../../img/offer-1.jpg);
+    background-size: cover;
+    height: 195px;
+}
+.header-right-down {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4)), url(../../../img/offer-2.jpg);
+    background-size: cover;
+    height: 195px;
+    margin-top: 10px;
+}
+.m div{
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+}
+.m div > *{
+    margin-bottom: 10px;
+}
+.m div h2{
+  font-size: 25px;
+}
+
+ @media screen and (max-width : 800px ) {
+    .header{
+        flex-direction: column;
+    }
+    .header-left{
+        width: 100%;
+    }
+    .header-right{
+        width: 90%;
+    }
+   
+ }

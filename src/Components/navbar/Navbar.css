@@ -1,0 +1,133 @@
+nav{
+    background:  #3d464d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 55554;
+
+}
+.nav-left h2{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-left h2 span{
+    color: var(--main-color);
+    font-size: 25px;
+
+}
+.nav-middle ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-middle ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.nav-middle ul a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s;
+}
+.nav-middle ul a:hover{
+    color: var(--main-color);
+}
+.nav-right  {
+    display: flex;
+    gap: 30px;
+
+}
+.nav-icon{
+    font-size: 20px;
+    color: var(--main-color);
+}
+.products-link{
+    position: relative;
+}
+.products-toggle{
+    position: absolute;
+    top: 45px;
+    left: -70px;
+    background-color: #ccccccf5;
+    padding: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    
+}
+.products-toggle a{
+    color: #000 !important;
+    font-size: 18px;
+    transition: 0.3s;
+    margin: auto;
+    padding: 10px;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.products-toggle a:hover{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+.moon , .sun{
+    font-size: 18px;
+    cursor: pointer;
+}
+.sun{
+    animation: sun 3s infinite;
+}
+@keyframes sun{
+   0% {
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+nav .menu{
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width : 800px){
+    nav{
+        position: relative;
+    }
+    .nav-middle ul{
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--main-color);
+        top: 69px;
+        right: -340px;
+        width: 300px;
+        margin:auto;
+        padding: 20px;
+        transition: 1s;
+
+    }
+    .nav-middle ul.open{
+        right: 0;
+    }
+    .nav-middle ul a{
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+    .nav-middle ul li{
+        text-align: center;
+            margin: auto;
+            display: block;
+    }
+    nav .menu{
+        display: block;
+    }
+}

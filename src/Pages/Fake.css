@@ -1,0 +1,134 @@
+ .title{
+    text-align: center;
+}
+ .title p{
+    color: gray;
+    font-size: 18px;
+    width: 70%;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product{
+    width: 22%;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.product>*{
+    margin-bottom: 20px;
+}
+/* .product h3{
+    color: var(--main-color);
+} */
+.product div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.products{
+    margin-top: 50px;
+}
+.link{
+    display: block;
+}
+.product img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.product-icon{
+    background-color:var(--main-color) ;
+    color: #fff;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.product-icon:hover{
+    transform: scale(1.1);
+}
+.product h3{
+    font-size: 20px;
+    color:gray;
+    letter-spacing: 1px;
+}
+.dummy-icon{
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dummy-icon:hover{
+    transform:  scale(1.1);
+}
+.product-details{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.product-details-img{
+    width: 40%;
+    background-color: #fff;
+    padding: 10px;
+}
+.product-details img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+
+}
+.product-info{
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+}
+.product-info >*{
+    margin-bottom: 20px;
+}
+.product-info h2{
+    color: var(--main-color);
+}
+.product-info h3{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.product-info div{
+    display: flex;
+    gap: 5px;
+}
+.star-icon{
+    color: gold;
+    font-size: 18px;
+}
+.product-info p{
+    font-size: 18px;
+    color: gray;
+    line-height: 1.5;
+}
+.product-info button{
+    background-color: var(--main-color);
+    padding: 15px 10px;
+    border: none;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    border-radius: 11px;
+    transition: 0.3s;
+}
+.product-info button:hover{
+    background-color: rgb(165, 165, 2);
+}
